@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Resume</title>
+	<link rel="icon" href="icon.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DESCRIPTION">
+    <meta name="keywords" content="KEYWORDS">
+    <meta name="author" content="Nikolaos Karamichalis">
+    <meta name="identifier-url" content="URL">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.0.2/typeit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	
+	<script type="text/javascript" src="fun.js"></script>
+
+</head>
+<body oncontextmenu="return false">
+
+	<div class="sidenav">
+		<div class="main-menu">
+		
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active">
+					<a href="#tab1">About me</a>
+				</li>
+				<li>
+					<a href="#tab2">Curriculum vitae</a>
+				</li>
+				<li>
+					<a href="#tab3">Contact</a>
+				</li>
+				<li>
+					<a href="/CV.pdf" target="_blank" type="application/octet-stream">Download CV</a>
+				</li>	
+			</ul>
+		</div>
+		
+		<div class="social-menu-desktop">
+			<h3>Social profiles:</h3>
+				<a href="" target="_blank" class="fa fa-facebook"></a>
+				<a href="" target="_blank" class="fa fa-linkedin"></a>
+				<a href="" target="_blank" class="fa fa-github"></a>
+		</div>
+		
+		<div class="social-menu-mobile">
+			<h3>Social profiles:</h3>
+				<a href="" target="_blank" class="fa fa-facebook"></a>
+				<a href="" target="_blank" class="fa fa-linkedin"></a>
+				<a href="" target="_blank" class="fa fa-github"></a>
+		</div>
+		<div>
+		    <footer style="text-align: center; font-size:12px; padding:10px; position:relative; bottom:0; width: 100%;">&copy; Copyright 2020 Nikolaos Karamichalis.<br>All rights reserved</footer>
+		</div>
+	</div>
+	
+	<div class="main2">
+		<a id="navBtn" onclick="openNav()" href="javascript:void(0);">
+			<i class="fa fa-bars"></i>
+		</a>
+		<div class="main" id="tab1">
+
+			<h1 id="element"></h1>
+			<h5>Sub heading</h5>
+
+			<p style="text-align:center; margin-top:50px;"><b>ABOUT ME</b></p>
+			<div class="aboutme">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+			<p style="text-align:center; margin-top:50px;"><b>PERSONAL INFO</b></p>
+			<div class="aboutme">
+                <div class="row">
+					<div class="column">
+						<p style="text-align: right;">First name</p>
+						<p style="text-align: right;">Last name</p>
+						<p style="text-align: right;">Birthday</p>
+						<p style="text-align: right;">Nationality</p>
+						<p style="text-align: right;">Location</p>
+					</div>
+					<hr>
+					<div class="column">
+						<p style="text-align: left; color:#a6a6a6">John</p>
+						<p style="text-align: left; color:#a6a6a6">Doe</p>
+						<p style="text-align: left; color:#a6a6a6">31/12/2020</p>
+						<p style="text-align: left; color:#a6a6a6">Greek</p>
+						<p style="text-align: left; color:#a6a6a6">Washington, DC</p>
+					</div>
+				</div>
+            </div>
+		</div>
+		<div class="main" id="tab2" style="display: none;">
+			<h1>Curriculum vitae</h1>
+			<p style="text-align:left; margin-top:10%;"><b>PROFESSIONAL EXPERIENCE</b></p>
+			<div class="exp" style="background: #F5F5F5;">
+				<div class="row" style="margin-bottom: 30px;">
+					<div class="col-12 col-md-4">
+						<p style="margin:10px;">
+							<i class="fa fa-calendar" aria-hidden="true"></i>Start – End
+						</p>
+					</div>
+					<div class="col-12 col-md-8" id="1">
+						<div style="margin:10px;">
+							<h4 style="color:#006699;">Lorem Ipsum</h4>
+							<i class="fa fa-map-marker" aria-hidden="true"></i>Washington, DC
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							</p>
+							<div id="more1">
+								<p>Responsibilities:</p>
+								<ul>
+									<li>Why do we use it?</li>
+									<li>Where does it come from?</li>
+									<li>Where can I get some?</li>
+								</ul>
+							</div>
+							<a onclick="myFunction('more1','myBtn1')" id="myBtn1" href="javascript:void(0);" >Read more</a>
+						</div>
+					</div>
+					
+					<div class="col-12 col-md-4">
+						<p style="margin:10px;">
+							<i class="fa fa-calendar" aria-hidden="true"></i>Start – End
+						</p>
+					</div>
+					<div class="col-12 col-md-8" id="2">
+						<div style="margin:10px;">
+							<h4 style="color:#006699;">Lorem Ipsum</h4>
+							<i class="fa fa-map-marker" aria-hidden="true"></i>Washington, DC
+							<p>
+								Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+							</p>
+							<div id="more2">
+								<p>Main responsibilities were:</p>
+								<ul>
+									<li>Content here</li>
+									<li>Content here</li>
+									<li>Content here</li>
+								</ul>
+							</div>
+							<a onclick="myFunction('more2','myBtn2')" id="myBtn2" href="javascript:void(0);" >Read more</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<p style="text-align:left;"><b>EDUCATIONAL AND TRAINING</b></p>
+			<div class="exp" style="background: #F5F5F5;">
+				<div class="row" style="margin-bottom: 30px;">
+					<div class="col-12 col-md-4">
+						<p style="margin:10px;">
+							<i class="fa fa-calendar" aria-hidden="true"></i>Start - End
+						</p>
+					</div>
+					<div class="col-12 col-md-8" id="7">
+						<div style="margin:10px;">
+							<h4 style="color:#006699;">The standard Lorem Ipsum passage</h4>
+							<p>
+							<i class="fa fa-map-marker" aria-hidden="true"></i>Washington, DC	
+							</p>
+							<div id="more7">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+								</p>
+								<p>
+									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+							<a onclick="myFunction('more7','myBtn7')" id="myBtn7" href="javascript:void(0);" >Read more</a>
+						</div>
+					</div>	
+
+				</div>
+			</div>
+			
+			<p style="text-align:left;"><b>PERSONAL SKILS</b></p>
+			<div class="exp" style="background: #F5F5F5;">
+			    <div class="row" style="margin-bottom: 30px;">
+					<div class="col-4">
+						<p style="margin:10px;">
+							Languages
+						</p>
+					</div>
+					<div class="col-8">
+					    <p style="margin:10px;">
+					        Language 1 (C2), Language 2 (C1), Language 3(A2), Language 4(A1)
+                        </p>
+					</div>
+					
+					<div class="col-4">
+						<p style="margin:10px;">
+							Skill 1
+						</p>
+					</div>
+					<div class="col-8">
+					    <p style="text-align:left;">
+					        <i class="fa fa-star"></i>
+					        <i class="fa fa-star"></i>
+					        <i class="fa fa-star"></i>
+					        <i class="fa fa-star"></i>
+					        <i class="fa fa-star"></i>
+                        </p>
+					</div>
+					<div class="col-4" style="margin-top:-20px;">
+						<p style="margin:10px;">
+							Skill 2
+						</p>
+					</div>
+					<div class="col-8" style="margin-top:-20px;">
+					    <p style="text-align:left;">
+					        <i class="fa fa-star"></i>
+					        <i class="fa fa-star"></i>
+					        <i class="fa fa-star"></i>
+					        <i class="fa fa-star"></i>
+					        <i class="fa fa-star-o"></i>
+                        </p>
+					</div>
+
+					<div class="col-4" style="margin-top:-20px;">
+						<p style="margin:10px;">
+							Skill 3
+						</p>
+					</div>
+					<div class="col-8" style="margin-top:-20px;">
+					    <p style="text-align:left;">
+					        <i class="fa fa-star"></i>
+					        <i class="fa fa-star"></i>
+					        <i class="fa fa-star"></i>
+					        <i class="fa fa-star-o"></i>
+					        <i class="fa fa-star-o"></i>
+                        </p>
+					</div>
+					
+			    </div>
+			</div>
+		
+		<a id="back-to-top" href="#tab2" class="back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="fa fa-arrow-up"></span></a>
+
+		</div>
+		<div class="main" id="tab3" style="display: none;">
+			<h1>Contact</h1>
+			
+				<div class="container">
+					<div class="row">
+						<div class="col-sm" style="text-align:center;">
+							<p style="text-align:center; margin-top:10%; color:#00aff0;">
+								<i class="fa fa-skype"></i>
+							</p>
+							<p style="color:black; font-size: 20px;">
+								Skype id
+							</p>
+						</div>
+						<div class="col-sm" style="text-align:center;">
+							<p style="margin-top:10%; color:#720e9e;">
+								<i class="fa fa-envelope"></i>
+							</p>
+							<p style="color:black; font-size: 20px;">
+								email@email.com
+							</p>
+						</div>
+						<div class="col-sm" style="text-align:center;">
+							<p style="text-align:center; margin-top:10%;">
+								<i class="fa fa-phone"></i>
+							</p>
+							<p style="color:black; font-size: 20px;">
+								(+00) 0000000000
+							</p>
+						</div>
+					</div>
+				
+					<div class="row"><p style="margin-top:35px;margin-bottom:25px;"><b>CONTACT FORM</b></p><span id="mail-status"></span></div>
+				    <div class="row">
+                        <form action="javascript:sendContact()">
+    						
+    						<input type="text" id="name" name="name" required placeholder="NAME">
+    
+    						<input type="email" id="email" name="email" required placeholder="EMAIL">
+
+    						<input type="text" id="subject" name="subject" required placeholder="SUBJECT">
+
+    						<textarea id="content" name="content" required placeholder="MESSAGE" style="height:200px"></textarea>
+    
+    						<p><input type="submit" value="Send"></p>
+    					</form>
+			    	</div>
+				</div>
+
+		</div>
+		
+	</div>
+		
+</body>
+</html>
